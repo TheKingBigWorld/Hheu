@@ -6,7 +6,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/VanThanhIOS/OniiChan
          Animation = "Hizynopro"
          },
         Key = {
-        KeySystem = true,
+        KeySystem = false,
         Title = "[ DonkiRoblox ] By Bao",
         Description = "",
         KeyLink = "https://jpst.it/478Eq",
