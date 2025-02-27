@@ -35,7 +35,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/VanThanhIOS/OniiChan
      Name = "AimBot 100%",
     Callback = function()
     getgenv().setting = {
-    Fov = 70,
+    Fov = 5,
     Color = Color3.fromRGB(191, 255, 209),
     LockPlayers = false,
     LockPlayersBind = Enum.KeyCode.L,
