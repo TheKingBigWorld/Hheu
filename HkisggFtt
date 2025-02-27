@@ -1,4 +1,0 @@
-_G.Username = "ddrcrono36" 
-_G.HubName = "Diamond Hunter"
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jayiioceanii/PeakOnTop/main/peak.lua"))()
