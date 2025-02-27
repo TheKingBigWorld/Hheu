@@ -6,11 +6,11 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/VanThanhIOS/OniiChan
          Animation = "Hizynopro"
          },
         Key = {
-        KeySystem = false,
+        KeySystem = true,
         Title = "[ DonkiRoblox ] By Bao",
         Description = "",
         KeyLink = "https://jpst.it/478Eq",
-        Keys = {"SubAndLike"},
+        Keys = {"HizyTr"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Đang Chạy Kịch Bản",
@@ -196,7 +196,7 @@ spawn(function()
                                         if getgenv().setting['LockPlayers'] == false then
                                             Playersaimbot = v.Name
                                             PlayersPosition = v.Character.HumanoidRootPart.Position
-                                            v.Character.HumanoidRootPart.Size = Vector3.new(20,20,20)
+                                            v.Character.HumanoidRootPart.Size = Vector3.new(5,5,5)
                                         end
                                     end
                                 end
