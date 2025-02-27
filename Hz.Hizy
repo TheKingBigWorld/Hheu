@@ -191,12 +191,12 @@ spawn(function()
                         local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
                         if magnitude < (getgenv().setting['Fov'] * 6 -8) /2 then
                             if magnitude < math.huge then
-                                if (v.Character.HumanoidRootPart.Position-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 100 then
+                                if (v.Character.HumanoidRootPart.Position-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 1000 then
                                     if v.Name ~= game.Players.LocalPlayer.Name then
-                                        if getgenv().setting['LockPlayers'] == true then
+                                        if getgenv().setting['LockPlayers'] == false then
                                             Playersaimbot = v.Name
                                             PlayersPosition = v.Character.HumanoidRootPart.Position
-                                            v.Character.HumanoidRootPart.Size = Vector3.new(10,10,10)
+                                            v.Character.HumanoidRootPart.Size = Vector3.new(100,100,100)
                                         end
                                     end
                                 end
