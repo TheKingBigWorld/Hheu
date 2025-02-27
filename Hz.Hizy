@@ -139,7 +139,7 @@ NamePlayers.BackgroundTransparency = 1.000
 NamePlayers.Position = UDim2.new(1.24220526, 0, 0.0109195411, 0)
 NamePlayers.Size = UDim2.new(0, 0, 0, 0)
 NamePlayers.Font = Enum.Font.FredokaOne
-NamePlayers.Text = "Văn Thành IOS"
+NamePlayers.Text = "Hizy aim"
 NamePlayers.TextColor3 = Color3.fromRGB(255, 255, 255)
 NamePlayers.TextSize = 19.000
 NamePlayers.TextXAlignment = Enum.TextXAlignment.Left
@@ -165,7 +165,7 @@ HealthgreenCorner.Parent = Healthgreen
 function updateCircle(Fov,colorCircle)
    if circle.__OBJECT_EXISTS then
        circle.Transparency = 1
-       circle.Visible = false
+       circle.Visible = true
        circle.Thickness = 2
        circle.Color = colorCircle
        circle.NumSides = 100
@@ -191,12 +191,12 @@ spawn(function()
                         local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
                         if magnitude < (getgenv().setting['Fov'] * 6 -8) /2 then
                             if magnitude < math.huge then
-                                if (v.Character.HumanoidRootPart.Position-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 1000 then
+                                if (v.Character.HumanoidRootPart.Position-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 100 then
                                     if v.Name ~= game.Players.LocalPlayer.Name then
-                                        if getgenv().setting['LockPlayers'] == false then
+                                        if getgenv().setting['LockPlayers'] == true then
                                             Playersaimbot = v.Name
                                             PlayersPosition = v.Character.HumanoidRootPart.Position
-                                            v.Character.HumanoidRootPart.Size = Vector3.new(100,100,100)
+                                            v.Character.HumanoidRootPart.Size = Vector3.new(10,10,10)
                                         end
                                     end
                                 end
@@ -220,7 +220,7 @@ spawn(function()
                         pcall(function()
                         Healthgreen:TweenSize(UDim2.new(hp,0,0,8),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.15)
                         end)
-                        ImageProfile.Image = game:GetService("Players"):GetUserThumbnailAsync(v.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+                        ImageProfile.Image = game:GetService("Players"):GetUserThumbnailAsync(v.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size40x40)
                     end
                 end
             end
